@@ -1,0 +1,1 @@
+export type RestProtocol = "http" | "https";

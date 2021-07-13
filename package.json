@@ -1,0 +1,32 @@
+{
+  "name": "lanyard.js",
+  "version": "1.0.0",
+  "description": "NodeJS Wrapper for Lanyard written using TypeScript",
+  "main": "dist/lanyard.js",
+  "typings": "dist/lanyard.d.ts",
+  "repository": "https://github.com/taigahq/lanyard.js",
+  "author": "Dennis Paulus <hello@crugg.de>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit --incremental false",
+    "docs": "typedoc src --theme node_modules/eledoc/bin/default/"
+  },
+  "keywords": [
+    "lanyard",
+    "nodejs",
+    "rich-presence",
+    "rpc",
+    "discord"
+  ],
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "eledoc": "^0.2.1",
+    "typedoc": "^0.21.4",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
