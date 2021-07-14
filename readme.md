@@ -6,22 +6,33 @@
 ## Usage Examples
 ### JavaScript
 ```js
-// Get data as string
 const lanyard = require("lanyard.js");
 const userId = "228965621478588416";
 
+// Get data as string
 lanyard.getString(userId).then((result) => {
+    console.log(result);
+});
+
+// Get data as object
+lanyard.get(userId).then((result) => {
     console.log(result);
 });
 ```
 
 ### TypeScript
 ```ts
-// Get data as string
 import * as lanyard from "lanyard.js";
+import { LanyardResponse } from "lanyard.js/interfaces";
 const userId: string = "228965621478588416";
 
+// Get data as string
 lanyard.getString(userId).then((result: string | undefined) => {
+    console.log(result);
+});
+
+// Get data as object
+lanyard.get(userId).then((result: LanyardResponse | undefined) => {
     console.log(result);
 });
 ```
