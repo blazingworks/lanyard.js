@@ -17,10 +17,10 @@ All commit messages must constructed like this:
 - perf: Performance improvements
 - workflow: Changes to deployment/commit verification workflow
 - wip: Work in progress
-- release: Final update of version number for release of new update
+- ver: Bump version number to start work on new version
 - misc: Something different
 ```regex
-/^(feat|fix|bump|docs|style|refactor|perf|workflow|wip|release|misc): .{1,40}/;
+/^(feat|fix|bump|docs|style|refactor|perf|workflow|wip|ver|misc): .{1,40}/;
 ```
 
 ### Examples
@@ -33,5 +33,5 @@ All commit messages must constructed like this:
 - `perf: Improved Performance for Inventory Command`
 - `workflow: Added GitHub Actions to verify PRs`
 - `wip: Started working on new Plugin`
-- `release: 2.0.0`
+- `ver: 2.0.0`
 - `misc: Updated package-lock.json`
