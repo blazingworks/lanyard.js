@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "build:check": "tsc --noEmit --incremental false",
-    "docs": "typedoc src --theme node_modules/eledoc/bin/default/"
+    "docs": "typedoc src --theme node_modules/eledoc/bin/default/ --highlightTheme dark-plus"
   },
   "keywords": [
     "lanyard",
