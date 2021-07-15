@@ -12,7 +12,7 @@ export interface LanyardResponse {
     spotify: Spotify | null,
     discord_user: DiscordUser,
     discord_status: DiscordStatus,
-    activites: Activity[]
+    activities: Activity[]
 }
 
 export interface Spotify {
